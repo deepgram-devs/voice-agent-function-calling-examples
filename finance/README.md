@@ -104,6 +104,12 @@ else:
     print(portfolio)
 ```
 
+## Workflow:
+
+1. AI first calls `get_portfolio_data(user_id)` to retrieve the user’s portfolio.
+2. For each stock in the portfolio, it triggers `get_stock_performance(stock_symbol, "1 month")` to check if any have declined more than 5%.
+3. If a stock meets the criteria, it triggers `sell_stock(stock_symbol, quantity)` to sell the shares.
+
 
 ## Response:
 

@@ -61,6 +61,12 @@ print(troubleshoot_issue(issue))
 print(configure_email_integration(user_id, email_settings))
 ```
 
+### Workflow:
+
+1. AI triggers `reset_password(user_id)` to send a reset link.
+2. It calls `troubleshoot_issue("email integration")` to diagnose and provide a solution.
+3. Finally, it uses `configure_email_integration(user_id, settings)` to apply the desired configuration.
+
 ## Response:
 
 "I've sent a password reset link to your email and reconfigured your email integration settings based on your requirements."

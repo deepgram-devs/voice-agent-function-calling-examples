@@ -75,6 +75,11 @@ if "in stock" in inventory_status:
     shipping_estimate = get_shipping_estimate(order_id)
     print(shipping_estimate)
 ```
+### Workflow:
+
+1. AI calls `check_inventory("iPhone 15")` to ensure the product is available.
+2. It uses `place_order("iPhone 15", 1, "saved_card")` to complete the purchase.
+3. Finally, `get_shipping_estimate(order_id)` is used to inform the user of the expected delivery.
 
 ## Response:
 
